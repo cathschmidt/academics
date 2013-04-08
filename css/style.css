@@ -604,6 +604,13 @@ header{
 }
 
 
+.studentProfile img, .facultyProfile img{
+	max-width:40%;
+	max-height:40%;
+	padding:1em;
+	 -webkit-filter: grayscale(100%);
+}
+
 /*department list*/
 
 .departmentList p{
@@ -696,6 +703,7 @@ header{
 }
 
 
+/* - - - - - FORMS -- - - - -- - - - - - - - - - - - - - - - - - - - - - -*/
 .box form{
 	width:95%;
 	/*background:rgba(100,100,100, 0.2);*/
@@ -754,6 +762,9 @@ select{
 	margin-bottom:36px;
 	margin-top:9px;
 }
+
+
+/* - - - -  - - - - - - - - - - - - - */
 
 
 
