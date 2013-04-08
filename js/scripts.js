@@ -13,15 +13,9 @@ jQuery(document).ready(function(){
 
 	})
 	
-	var arcPosition = jQuery('#architecture').offset().top;
 	
-	jQuery('#architecture').click(function(){
-		// Scroll down to 'philPosition'
-		jQuery('html, body').animate({scrollTop:arcPosition}, 'slow');
-		// Stop the link from acting like a normal anchor link
-		return false;
-	});
 	
+		
 	$(window).scroll( function (){
 
 	  		if ($(window).scrollTop() > 170){
@@ -36,4 +30,4 @@ jQuery(document).ready(function(){
 
 	  		})
 
-})
+});

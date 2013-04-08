@@ -7,9 +7,18 @@
 	
 	<script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/scripts.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery.flexslider.js" type="text/javascript" charset="utf-8"></script>
 	
+   <link rel="stylesheet" href="../flexslider.css" type="text/css" media="screen" title="no title" charset="utf-8">
    
-   
+   <script>
+   // Can also be used with $(document).ready()
+   $(window).load(function() {
+     $('.flexslider').flexslider({
+       animation: "slide"
+     });
+   });
+   </script>
 	
 </head>
 <body id="architecture" onload="">
@@ -61,6 +70,7 @@
 			</ul>
 			
 		</nav>
+		
 		<nav id="top">
 			<a href="#architecture">Top</a>
 		</nav>
@@ -91,13 +101,15 @@
 			
 			<div class="box gallery">
 				<h3>In the Studio</h3>
-				<div class="galleryContainer">
-						<img src="#" alt="">
-						<!-- <img src="#" alt="">
-						<img src="#" alt="">
-						<img src="#" alt="">
-						<img src="#" alt="">
-						<img src="#" alt=""> -->
+				<div class="galleryContainer flexslider">
+						<ul class="slides">
+							<li><img src="#" alt=""></li>
+							<li><img src="#" alt=""></li>
+							<li><img src="#" alt=""></li>
+							<li><img src="#" alt=""></li>
+							<li><img src="#" alt=""></li>
+							<li><img src="#" alt=""></li>
+						</ul>
 				</div>
 			</div>          
 			
@@ -109,14 +121,18 @@
 				</p>
 			</div>
 			
-			<div class="box gallery">
+			<div class="box gallery ">
 				<h3>Student Work</h3>
-				<img src="#" alt="">
-				<!-- <img src="#" alt="">
-				<img src="#" alt="">
-				<img src="#" alt="">
-				<img src="#" alt="">
-				<img src="#" alt=""> -->
+				<div class="galleryContainer flexslider">
+					<ul class="slides">
+						<li><img src="#" alt=""></li>
+						<li><img src="#" alt=""></li>
+						<li><img src="#" alt=""></li>
+						<li><img src="#" alt=""></li>
+						<li><img src="#" alt=""></li>
+						<li><img src="#" alt=""></li>
+					</ul>
+				</div>
 			</div>
 			
 			<div class="box facultyProfile left clearfix">
