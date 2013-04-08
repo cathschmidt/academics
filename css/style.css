@@ -476,10 +476,20 @@ nav.mainNav a.column2{
 
 /* - - - - COLOR - - - - - - - - - - - - - - - - - - - - - - - - */
 
-.subNav, header h1, .rule{
+#architecture nav.subNav,#architecture header h1,#architecture .rule{
 	background:rgba(164,27,27,1.0);
 } 
 
+#textiles nav.subNav, #textiles header h1, #textiles .rule{
+	background:rgba(255,143,8,1.0);
+}
+
+#textiles .subNav ul li a:hover{
+	background:rgb(211,115,0);
+}
+#textiles .subNav ul li{
+	border-bottom:1px solid rgb(211,115,0);
+}
 
 
 /* - - - TYPOGRAPHY - - - - - - - - - - - - - - - - - - - - - -  */
@@ -677,7 +687,7 @@ header{
 .galleryContainer{
 	width:816px;
 	height:500px;
-	background:green;
+	background:rgb(220,220,220);
 }
 
 
@@ -686,7 +696,55 @@ header{
 }
 
 
+.box form{
+	width:95%;
+	/*background:rgba(100,100,100, 0.2);*/
+	margin:0px auto;
+}
 
+.box form input[type="text"]{
+	font-family:ProximaReg;
+	font-size:1em;
+	color:rgb(80,80,80);
+	background-color:rgb(30,30,30);
+	border:1px solid rgb(0,0,0);
+	-webkit-transition: all 0.2s ease-in-out;
+	padding:0.5em;
+	-webkit-box-shadow: inset 0px 0px 10px rgb(0,0,0);
+	margin-right:9px;
+	margin-bottom:9px;
+	
+}
+
+.box form input[type="text"]:focus{
+	background:rgb(250,250,250);
+}
+
+#firstname, #lastname, #email, #phone{
+	width:45%;
+}
+
+#street, #city{
+	width:35%;
+}
+
+#zip{
+	width:10%;
+}
+
+select{
+	background:rgb(0,0,0);
+	-webkit-border-radius:0px;
+	-webkit-box-shadow:none;
+	font-family:ProximaReg;
+	border-radius:0px;
+	font-size:1em;
+	color:white;
+	border:none;
+	color:rgb(100,100,100);
+	margin-bottom:36px;
+	margin-top:9px;
+}
 
 
 
