@@ -316,7 +316,7 @@ nav.mainNav a.column2{
 	width:816px;
 	background:rgb(250,250,250);
 	margin:0px 0px 9px 0px;
-	
+	position:relative;
 }
 
 .heroImage{
@@ -351,6 +351,7 @@ nav.mainNav a.column2{
 .box p{
 	margin:0px;
 	padding:1em;
+	line-height:1.6em;
 }
 
 .statement{
@@ -496,6 +497,7 @@ nav.mainNav a.column2{
 
 .box p{
 	font-family:ProximaReg;
+	font-size:1.1em;
 }
 
 .box ul li{
@@ -511,13 +513,13 @@ nav.mainNav a.column2{
 .box h3{
 	background:rgb(240,240,240);
 	font-family:ProximaReg;
-	font-size:1em;
+	font-size:1.1em;
 	font-weight:normal;
 	margin-top:0px;
 	margin-bottom:0px;
-	padding:0.25em 0.25em 0.25em 1em;
-	color:rgb(90,90,90);
-	
+	padding:0.5em 0.5em 0.5em 1em;
+	color:rgb(150,150,150);
+	border-bottom:1px solid rgb(220,220,220);
 
 }
 
@@ -574,7 +576,7 @@ header{
 	
 }
 
-.statement p:last-child{
+.statement p:nth-child(2){
 	font-size:0.75em;
 	margin-top:0.75em;
 	color:rgb(120,120,120);
@@ -595,7 +597,7 @@ header{
 	padding-bottom:0em;
 }
 
-.quote p:last-child{
+.quote p:nth-child(2){
 	font-family:ProximaReg;
 	font-size:1.125em;
 	margin-top:0px;
@@ -603,6 +605,39 @@ header{
 	padding-bottom:2.5em;
 }
 
+.ingredients{
+	position:absolute;
+	top:0px;
+	right:0px;
+	left:0px;
+	bottom:0px;
+	width:100%;
+	height:100%;
+	
+	background:rgba(0,0,0,0.85);
+	opacity:0.0;
+	-webkit-transition:all 0.2s ease-in;
+	
+	
+	display:none;
+}
+
+.box .ingredients p{
+	color:rgb(230,230,230);
+	font-family:helvetica;
+	font-size:18px;
+	line-height:28px;
+	width:75%;
+	text-align:left;
+	margin:0px auto;
+	float:none;
+}
+
+.box:hover .ingredients{
+	opacity:1.0;
+	-webkit-transition-property:opacity;
+	-webkit-transition-delay: 1.75s;
+}
 
 .studentProfile img, .facultyProfile img{
 	max-width:40%;
@@ -702,23 +737,60 @@ header{
 	padding:0em;
 }
 
+.requestInfo{
+	height:340px;
+}
+.requestInfo p{
+	float:left;
+	width:45%;
+}
 
+.requestInfo .contact{
+	float:left;
+	position:absolute;
+	top:150px;
+	border-top:1px solid rgb(220,220,220);
+	width:47%;
+}
+
+.requestInfo ul{
+	margin-bottom:0px;
+	/*background:yellow;*/
+	padding-bottom:0px;
+	width:42.5%;
+	float:left;
+}
+
+.requestInfo ul li{
+	font-family:ProximaReg;
+	font-size:13px;
+	line-height:20px;
+	color:rgb(140,140,140);
+}
+
+.requestInfo ul li:first-child{
+	font-family:ProximaBold;
+}
 /* - - - - - FORMS -- - - - -- - - - - - - - - - - - - - - - - - - - - - -*/
 .box form{
-	width:95%;
+	width:50%;
 	/*background:rgba(100,100,100, 0.2);*/
 	margin:0px auto;
+	float:right;
+	padding-top:0.75em;
+	
 }
 
 .box form input[type="text"]{
 	font-family:ProximaReg;
 	font-size:1em;
-	color:rgb(80,80,80);
-	background-color:rgb(40,40,40);
-	border:1px solid rgb(10,10,10);
+	color:rgb(140,140,140);
+/*	background-color:rgb(40,40,40);*/
+	background-color:rgb(245,245,245);
+	border:1px solid rgb(170,170,170);
 	-webkit-transition: all 0.2s ease-in-out;
 	padding:0.5em;
-	-webkit-box-shadow: inset 0px 0px 10px rgb(20,20,20);
+	-webkit-box-shadow: inset 0px 0px 10px rgb(180,180,180);
 	
 	margin-right:9px;
 	margin-bottom:9px;
@@ -727,24 +799,29 @@ header{
 
 .box form input[type="text"]:focus{
 	background:rgb(250,250,250);
-	-webkit-box-shadow:0px 0px 10px rgb(30,30,30);
+	-webkit-box-shadow:0px 0px 10px rgb(180,180,180);
+	color:rgb(80,80,80);
 }
 
 #firstname, #lastname, #email, #phone{
-	width:45%;
+	width:42%;
 }
 
-#street, #city{
-	width:35%;
+#street{
+	width:49%;
 }
+ #city{
+	 width:35%;
+	
+ }
 
 #zip{
-	width:10%;
+	width:15%;
 }
 
 select{
 	-webkit-appearance:none;
-	background:rgb(40,40,40);
+	background:rgb(200,200,200);
 	background-image:url(../img/dropdown.png);
 	background-repeat:no-repeat;
 	background-position:right;
