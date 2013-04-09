@@ -360,7 +360,7 @@ nav.mainNav a.column2{
 }
 
 
-.alumniFeature ul{
+.alumniFeature ul, .facultyNews ul{
 	-webkit-column-count:2;
 	-webkit-column-gap:2em;
 	/*background:yellow;*/
@@ -368,32 +368,39 @@ nav.mainNav a.column2{
 
 }
 
-.alumniFeature ul.alumn{
+.alumniFeature ul.alumn, .facultyNews ul.facultyStory{
 	-webkit-column-count:1;
 /*	background:orange;*/
 	margin:0px;
 	padding:0px;
 }
 
-.alumniFeature ul.alumn li.name{
+.alumniFeature ul.alumn li.name, .facultyNews ul.facultyStory li.facultyHeadline{
 	border-bottom:none;
 	font-size:1.25em;
 	margin-bottom:0px;
+	color:rgb(100,100,100);
 	
 }
 
-.alumniFeature ul.alumn li.description{
+.alumniFeature ul.alumn li.description, .facultyNews ul.facultyStory li.story{
 	font-family:ProximaReg;
 	font-size:1em;
-	color:rgb(100,100,100);
+	color:rgb(30,30,30);
 	padding:0.5em 0em;
 	margin-bottom:2em;
+	line-height:1.45em;
 }
 
 
-.alumniFeature ul li{
+.alumniFeature ul li, .facultyNews ul li{
 	border-bottom:1px dotted rgb(30,30,30);
 	margin:0px;
+}
+
+
+.facultyNews ul ul:nth-child(2){
+	margin-bottom:10px;
 }
 
 .departmentList{
@@ -479,6 +486,7 @@ nav.mainNav a.column2{
 
 #architecture nav.subNav,#architecture header h1,#architecture .rule{ background:rgba(164,27,27,1.0);} 
 #architecture ::selection{ background:rgba(164,27,27,1.0); color:rgba(250,250,250,1.0); }
+
 
 #fav nav.subNav,#fav header h1,#fav .rule{ background:rgba(77,32,145,1.0);}
 #fav ::selection{ background:rgba(77,32,145,1.0); color:rgba(250,250,250,1.0);}
@@ -645,6 +653,21 @@ header{
 	padding:1em;
 	 -webkit-filter: grayscale(100%);
 }
+
+.studentProfile p{
+	/*background:yellow;
+	border-bottom:1px solid green;*/
+}
+.studentProfile p:nth-child(4){
+	padding:0em 1em 1em 1em;
+}
+
+.studentProfile a:link{ color:rgba(164,27,27,1.0); text-decoration:none; -webkit-transition:all 0.2s ease-in;}
+.studentProfile a:visited{ color:rgba(164,27,27,1.0); }
+.studentProfile a:hover{ color:rgb(113,4,4); }
+
+
+
 
 /*department list*/
 
@@ -821,7 +844,8 @@ header{
 
 select{
 	-webkit-appearance:none;
-	background:rgb(200,200,200);
+	background:rgb(230,230,230);
+	border:1px solid rgb(170,170,170);
 	background-image:url(../img/dropdown.png);
 	background-repeat:no-repeat;
 	background-position:right;
@@ -834,7 +858,7 @@ select{
 	border-radius:0px;
 	font-size:1em;
 	color:white;
-	border:none;
+	
 	color:rgb(100,100,100);
 	margin-bottom:36px;
 	margin-top:9px;
@@ -844,6 +868,48 @@ select{
 /* - - - -  - - - - - - - - - - - - - */
 
 
-
+@media (max-width: 480px) {
+	.subNav{
+		display:none;
+	}
+	.box{
+		width:90%;
+		margin:4px auto;
+	}
+	.wrapper{
+		width:100%;
+	}
+	
+	header{
+		width:90%;
+		margin:4px auto;
+	}
+	.rule{
+		width:40%;
+	}
+	
+	.mainContainer{
+		width:100%;
+		margin:0 auto;
+	}
+	
+	.atmospheric img{
+		max-width:100%;
+		max-height:20%;
+	}
+	
+	.box img{
+		max-width:100%;
+		height:auto;
+	}
+	
+	.box ul{
+		-webkit-column-count:1;
+	}
+	
+	.mainNav{
+		display:none;
+	}
+}
 
 
