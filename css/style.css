@@ -627,7 +627,7 @@ header{
 	-webkit-transition:all 0.2s ease-in;
 	
 	
-	display:none;
+	/*display:none;*/
 }
 
 .box .ingredients p{
