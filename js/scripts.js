@@ -1,4 +1,10 @@
 jQuery(document).ready(function(){
+	
+	$("#hide").click(function () {
+			  $('#mainContainer').toggleClass('hide');
+		  });
+	
+	
 	$(window).scroll( function (){
 
 	if ($(window).scrollTop() > 170){
