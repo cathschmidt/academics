@@ -362,10 +362,21 @@ nav.mainNav a.column2{
 	/*-webkit-font-smoothing: antialiased;*/
 }
 
+.facultyNews ul.facultyStory{
+ 	
+	width:50%;
+	
+}
+
+.box p.moduleIntro{
+	font-size:2em;
+	float:left;
+	width:50%;
+}
 
 .alumniFeature ul, .facultyNews ul{
-	-webkit-column-count:2;
-	-webkit-column-gap:2em;
+	/*-webkit-column-count:2;*/
+	
 	/*background:yellow;*/
 	padding:1em 1em 0em 1em;
 
@@ -377,6 +388,14 @@ nav.mainNav a.column2{
 	margin:0px;
 	padding:0px;
 	
+}
+
+.alumniFeature ul.alumn{
+	/*margin-left:50%;*/
+	width:50%;
+	float:left;
+	/*background:yellow;*/
+	/*position:absolute;*/
 }
 
 
