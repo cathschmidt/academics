@@ -529,7 +529,7 @@ nav.mainNav a.column2{
 
 /* - - - - COLOR - - - - - - - - - - - - - - - - - - - - - - - - */
 
-#architecture nav.subNav,#architecture header h1,#architecture .rule{ background:rgba(164,27,27,1.0);} 
+#architecture nav.subNav,#architecture header h1, #architecture form #submit, #architecture .rule{ background:rgba(164,27,27,1.0);} 
 #architecture ::selection{ background:rgba(164,27,27,1.0); color:rgba(250,250,250,1.0); }
 
 
@@ -539,11 +539,11 @@ nav.mainNav a.column2{
 #fav .subNav ul li{ border-bottom:1px solid rgb(59,24,111);}
 #fav .rule{width:64.5%; }
 
-#textiles nav.subNav, #textiles header h1, #textiles .rule{ background:rgba(255,143,8,1.0);}
+#textiles nav.subNav, #textiles header h1, #textiles form #submit, #textiles .rule{ background:rgba(255,143,8,1.0);}
 #textiles ::selection{ background:rgba(255,143,8,1.0); color:rgba(250,250,250,1.0); }
-#textiles .subNav ul li a:hover{ background:rgb(211,115,0); }
+#textiles .subNav ul li a:hover, #textiles form #submit:hover{ background:rgb(211,115,0); }
 #textiles .subNav ul li{ border-bottom:1px solid rgb(211,115,0);}
-#textiles .rule{width:85.5%;}
+#textiles .rule{width:81.5%;}
 
 
 #academics nav.subNav, #academics header h1, #academics .rule{ background:rgba(0,161,51,1.0);} 
@@ -594,7 +594,8 @@ header h1{
 	padding:0.5em;
 	text-transform:uppercase;
 	color:rgb(250,250,250);
-	font-size:1.45em;
+	font-size:1.85em;
+	/*font-size:8em;*/
 	letter-spacing:0.125em;
 	margin:0px;
 }
@@ -609,7 +610,7 @@ header{
 .rule{
 	display:inline-block;
 	position:absolute;
-	width:78%;
+	width:72%;
 	right:0px;
 	bottom:0px;
 	height:9px;
@@ -825,7 +826,7 @@ header{
 }
 
 .requestInfo{
-	height:340px;
+	/*height:340px;*/
 }
 .requestInfo p{
 	float:left;
@@ -865,8 +866,8 @@ header{
 .box form{
 	width:50%;
 	/*background:rgba(100,100,100, 0.2);*/
-	margin:0px auto;
-	float:right;
+	margin-left:1em;
+	/*float:right;*/
 	padding-top:0.75em;
 	
 }
@@ -887,10 +888,29 @@ header{
 	
 }
 
+
+
 .box form input[type="text"]:focus{
 	background:rgb(250,250,250);
 	-webkit-box-shadow:0px 0px 10px rgb(180,180,180);
 	color:rgb(80,80,80);
+}
+
+#submit{
+	width:33%;
+	padding:0.5em;
+	font-family:ProximaReg;
+	font-size:1.25em;
+	margin-bottom:1em;
+	color:white;
+	border-top:1px solid rgb(240,240,240);
+}
+
+
+.box form input[type="submit"]{
+	
+	
+	
 }
 
 #firstname, #lastname, #email, #phone{
@@ -927,7 +947,7 @@ select{
 	color:white;
 	
 	color:rgb(100,100,100);
-	margin-bottom:36px;
+	margin-bottom:1em;
 	margin-top:9px;
 }
 

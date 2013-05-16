@@ -74,14 +74,13 @@
 		
 		<nav id="sideBar" class="subNav">
 			<ul>
-				<li><a href="#">Graduate</a></li>
+				<!-- <li id="hide"><a href="#">Show Background</a></li> -->
 				<li><a href="#">Undergraduate</a></li>
+				<li><a href="#">Graduate</a></li>
 				<li><a href="#">Faculty</a></li>
 				<li><a href="#">Curriculum</a></li>
 				<li><a href="#">Facilities</a></li>
 				<li><a href="#">News + Research</a></li>
-				<li><a href="#">Application Process</a></li>
-				<li><a href="#">Request Information</a></li>
 				<li><a href="#">Contact</a> </li>
 			</ul>
 			
@@ -92,7 +91,7 @@
 		</nav>
 		
 		<section class="mainContainer clearfix">
-			<div class="box heroImage">
+			<div class="box heroImage clearfix">
 				<img src="#" alt=""/>
 			</div>
 			
@@ -118,12 +117,12 @@
 				<h3>In the Studio</h3>
 				<div class="galleryContainer flexslider">
 						<ul class="slides">
-							<li><img src="#" alt=""></li>
-							<li><img src="#" alt=""></li>
-							<li><img src="#" alt=""></li>
-							<li><img src="#" alt=""></li>
-							<li><img src="#" alt=""></li>
-							<li><img src="#" alt=""></li>
+							<li><img src="../img/textiles/text-studio-01.jpg" alt=""></li>
+							<li><img src="../img/textiles/text-studio-02.jpg" alt=""></li>
+							<li><img src="../img/textiles/text-studio-03.jpg" alt=""></li>
+							<li><img src="../img/textiles/text-studio-04.jpg" alt=""></li>
+							<li><img src="../img/textiles/text-studio-05.jpg" alt=""></li>
+							<li><img src="../img/textiles/text-studio-06.jpg" alt=""></li>
 						</ul>
 				</div>
 			</div>          
@@ -142,7 +141,7 @@ Margaret Kearney’s ability to weave formal and aesthetic concerns with her env
 				<h3>Student Work</h3>
 				<div class="galleryContainer flexslider">
 					<ul class="slides">
-						<li><img src="#" alt=""></li>
+						<li><img src="../img/textiles/text-studentWork-01.jpg" alt=""></li>
 						<li><img src="#" alt=""></li>
 						<li><img src="#" alt=""></li>
 						<li><img src="#" alt=""></li>
@@ -154,7 +153,7 @@ Margaret Kearney’s ability to weave formal and aesthetic concerns with her env
 			
 			<div class="box facultyProfile left clearfix">
 				<h3>Brooks Hagan: Department Head</h3>
-				<img src="#"/>
+				<img src="../img/textiles/brooks-hagan.jpg"/>
 				<p>
 					Textile designer, artist and researcher Brooks Hagen inspires RISD students to continuously expand their knowledge and explore the use of advanced technologies in their work. Hagen maintains a studio practice centered on hand-production and digital design, and regularly collaborates with industry leaders. He recently completed a project with computer scientists at Cornell University, which investigates advanced computational environments for the design of constructed textiles. 
 				</p>
@@ -173,7 +172,7 @@ Margaret Kearney’s ability to weave formal and aesthetic concerns with her env
 				
 			</div>
 			
-			<div class="box atmospheric">
+			<div class="box atmospheric clearfix">
 				<img src="#" alt=""/>
 			</div>
 			
@@ -187,7 +186,7 @@ Margaret Kearney’s ability to weave formal and aesthetic concerns with her env
 
 			
 		
-
+<!-- 
 			<div class="box alumniFeature clearfix">
 				<h3>After RISD Textiles</h3>
 				
@@ -196,12 +195,12 @@ Margaret Kearney’s ability to weave formal and aesthetic concerns with her env
 				</p>	
 				 -->
 				
-				<ul class="alumnStories">
+				<!-- <ul class="alumnStories">
 					
 					<ul class="alumn">
 						<li class="name">Rachel Doriss ‘99 TX | VP + Design Director, POLLACK Fabrics</li> 
 						<li class="description">When Rachel Doriss first came to RISD, she was already head over heels in love with textiles, imagining that might lead to owning a small weaving studio in rural Vermont. But while studying both printed and woven techniques — and with frequent class trips to Manhattan — she suddenly wanted to explore practical applications within the textiles industry instead. Moving to New York right after graduation, she found a job designing printed silk scarves at Echo and the following year, joined the textiles firm POLLACK. By 2012 she had become a vice president and, when founder and fellow RISD graduate Mark Pollack retired, he chose Rachel to replace him as design director of the company.</li>
-					</ul>
+					</ul> -->
 					
 					
 					
@@ -214,24 +213,27 @@ Margaret Kearney’s ability to weave formal and aesthetic concerns with her env
 						<li class="name">Ken Lewis</li> 
 						<li class="description">building skyscrapers @SOM</li>
 					</ul> -->
-				</ul>
+				<!-- </ul> -->
 				
 				<!-- <div class="ingredients">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
 				</div> -->
-			</div>
+			<!-- </div> -->
 
-				<div class="box atmospheric">
+				<div class="box atmospheric clearfix">
 				<img src="#" alt=""/>
 				
 			</div>
 			
 			<div class="box  requestInfo">
+				<h3>Get in Touch</h3>
 				<p>
 					Amazing things happen to students who come here. To learn more about how you can bring your ideas to life at RISD, please submit this form and we will send you additional information.
 				</p>
+				
+
 				<form>
 					
 					<input type="text" id="firstname" value="first name"></input>
@@ -258,6 +260,9 @@ Margaret Kearney’s ability to weave formal and aesthetic concerns with her env
 						<option>transfer</option>
 						<option>graduate student</option>
 					</select>
+
+					<input id="submit" type="submit" value="submit"></input>
+
 				</form>
 			</div>
 			
@@ -293,7 +298,7 @@ Margaret Kearney’s ability to weave formal and aesthetic concerns with her env
 		</section>
 		
 		  <script>
-    	$.backstretch("../img/textiles/text-bg-02.jpg");
+    	$.backstretch("../img/textiles/text-bg-03.jpeg");
    		
     </script>
 	</div>
