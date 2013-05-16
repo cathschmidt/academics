@@ -338,7 +338,7 @@ nav.mainNav a.column2{
 }
 .atmospheric img{
 	width:816px;
-	height:250px;
+	/*height:250px;*/
 	background:rgb(220,220,220);
 	margin:0px;
 	display:inline-block;
@@ -544,6 +544,7 @@ nav.mainNav a.column2{
 #textiles .subNav ul li a:hover, #textiles form #submit:hover{ background:rgb(211,115,0); }
 #textiles .subNav ul li{ border-bottom:1px solid rgb(211,115,0);}
 #textiles .rule{width:81.5%;}
+#textiles form #submit{border-top:1px solid rgb(211,115,0); border-bottom:2px solid rgb(200,105,0); border-right:2px solid rgb(200,105,0);}
 
 
 #academics nav.subNav, #academics header h1, #academics .rule{ background:rgba(0,161,51,1.0);} 
