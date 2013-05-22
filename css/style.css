@@ -20,6 +20,11 @@
 }
 
 
+@font-face{
+	font-family:"ModernPictograms";
+	src:url('../fonts/modernpics.otf');
+}
+
 /* = = = = = = = STRUCTURE = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 body{
@@ -491,6 +496,11 @@ nav.mainNav a.column2{
 	text-align:center;
 }
 
+#fav .degrees ul{
+	margin:0 auto;
+	float:none;
+}
+
 
 .links{
 	background:rgb(30,30,30);
@@ -531,13 +541,26 @@ nav.mainNav a.column2{
 
 #architecture nav.subNav,#architecture header h1, #architecture form #submit, #architecture .rule{ background:rgba(164,27,27,1.0);} 
 #architecture ::selection{ background:rgba(164,27,27,1.0); color:rgba(250,250,250,1.0); }
+#architecture h1.title{color:rgba(184,47,47,1.0); background:rgb(113,4,4);}
+#architecture #undergraduate.rule{width:40.25%;}
+#architecture #graduate.rule{width:51.33%;}
 
+#architecture-link:hover{color:rgba(164,27,27,1.0);}
 
 #fav nav.subNav,#fav header h1,#fav .rule{ background:rgba(77,32,145,1.0);}
 #fav ::selection{ background:rgba(77,32,145,1.0); color:rgba(250,250,250,1.0);}
 #fav .subNav ul li a:hover{ background:rgb(59,24,111); }
 #fav .subNav ul li{ border-bottom:1px solid rgb(59,24,111);}
-#fav .rule{width:64.5%; }
+#fav .rule{width:53.25%; }
+#fav h1.title{ color: rgba(107,62,175,1.0); background:rgb(59,24,111);}
+#fav #undergraduate.rule{width:21.5%;}
+
+#fav-link:hover{color:rgba(77,32,145,1.0);}
+
+
+#sculpture nav.subNav,#sculpture header h1,#sculpture .rule{ background:rgba(0,204,187,1.0);}
+#sculpture .subNav ul li a:hover, #sculpture form #submit:hover{ background:rgb(0,166,152); }
+#sculpture .subNav ul li{ border-bottom:1px solid rgb(0,166,152);}
 
 #textiles nav.subNav, #textiles header h1, #textiles form #submit, #textiles .rule{ background:rgba(255,143,8,1.0);}
 #textiles ::selection{ background:rgba(255,143,8,1.0); color:rgba(250,250,250,1.0); }
@@ -546,6 +569,7 @@ nav.mainNav a.column2{
 #textiles .rule{width:81.5%;}
 #textiles form #submit{border-top:1px solid rgb(211,115,0); border-bottom:2px solid rgb(200,105,0); border-right:2px solid rgb(200,105,0);}
 
+#textiles-link:hover{color:rgba(255,143,8,1.0);}
 
 #academics nav.subNav, #academics header h1, #academics .rule{ background:rgba(0,161,51,1.0);} 
 #academics ::selection{ background:rgba(0,161,51,1.0); color:rgba(250,250,250,1.0); }
@@ -565,13 +589,16 @@ nav.mainNav a.column2{
 	font-family:ActaBook;
 }
 
+.box img{
+	line-height:0px;
+}
 
 
 .quote{
 	text-indent:-0.45em;
 }
 
-.box h3{
+.box h2{
 	background:rgb(240,240,240);
 	/*background:rgb(40,40,40);*/
 	font-family:ActaBook;
@@ -579,10 +606,19 @@ nav.mainNav a.column2{
 	font-weight:normal;
 	margin-top:0px;
 	margin-bottom:0px;
-	
 	padding:0.75em 0.5em 0.5em 0.5em;
 	color:rgb(120,120,120);
 	border-bottom:1px solid rgb(220,220,220);
+
+}
+
+.box h3{
+	font-family:ActaBook;
+	font-size:1.33em;
+	color:rgb(90,90,90);
+	padding:1em 0em 0em 0.75em;
+	margin:0px;
+
 
 }
 
@@ -653,7 +689,6 @@ header{
 	color:white;
 	margin-top:0px;
 	margin-bottom:0px;
-	
 	width:90%;
 }
 
@@ -755,6 +790,7 @@ header{
 .departmentList p a:link{
 	color:rgb(230,230,230);
 	text-decoration:none;
+	-webkit-transition:all 0.2s ease-in-out;
 	
 }
 
@@ -882,7 +918,7 @@ header{
 	border:1px solid rgb(170,170,170);
 	-webkit-transition: all 0.2s ease-in-out;
 	padding:0.5em;
-	-webkit-box-shadow: inset 0px 0px 10px rgb(180,180,180);
+	/*-webkit-box-shadow: inset 0px 0px 10px rgb(180,180,180);*/
 	
 	margin-right:9px;
 	margin-bottom:9px;
@@ -898,15 +934,55 @@ header{
 }
 
 #submit{
-	width:33%;
-	padding:0.5em;
+	/*width:33%;*/
+	padding:0.5em 3em 0.5em 3em;
 	font-family:ProximaReg;
 	font-size:1.25em;
 	margin-bottom:1em;
 	color:white;
 	border-top:1px solid rgb(240,240,240);
+	position:relative;
 }
 
+#submit.two{
+	border:1px solid rgb(150,150,150);
+	background:rgb(250,250,250);
+
+}
+
+.submitArrow{
+	font-family:ModernPictograms;
+	font-size:1.5em;
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:1.5em;
+	width:1em;
+	border-radius:0.5em;
+	border:2px solid rgb(250,250,250);
+	padding:0px;
+}
+
+.nextArrow {
+	width:20px;
+	height:20px;
+	/*background:orange;*/
+	position:absolute;
+	right:20px;
+	top:10px;
+}
+
+.nextArrow path{
+	fill:rgb(0,0,0);
+}
+
+.nextArrow:hover path{
+	fill:white;
+}
+
+#architecture submit.two{
+	background:none;
+}
 
 .box form input[type="submit"]{
 	
@@ -952,6 +1028,19 @@ select{
 	margin-top:9px;
 }
 
+
+/* Faculty Page */
+
+.faculty-list{
+	/*background:yellow;*/
+	-webkit-column-count:3;
+}
+
+.box .faculty-list li{
+	font-family:ProximaReg;
+	line-height:2em;
+
+}
 
 /* - - - -  - - - - - - - - - - - - - */
 
