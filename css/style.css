@@ -364,7 +364,7 @@ nav.mainNav a.column2{
 }
 
 .statement{
-	background:rgb(30,30,30);
+	background:rgb(20,20,20);
 	color:rgb(230,230,230);
 	/*-webkit-font-smoothing: antialiased;*/
 }
@@ -558,7 +558,9 @@ nav.mainNav a.column2{
 #fav-link:hover{color:rgba(77,32,145,1.0);}
 
 
+
 #sculpture nav.subNav,#sculpture header h1,#sculpture .rule{ background:rgba(0,204,187,1.0);}
+#sculpture ::selection{ background:rgba(0,204,187,1.0); color:rgba(250,250,250,1.0);}
 #sculpture .subNav ul li a:hover, #sculpture form #submit:hover{ background:rgb(0,166,152); }
 #sculpture .subNav ul li{ border-bottom:1px solid rgb(0,166,152);}
 
@@ -1085,6 +1087,16 @@ select{
 	}
 	
 	.mainNav{
+		display:none;
+	}
+}
+
+@media (max-width:1024){
+	.box{
+		width:700px;
+		border:10px solid yellow;
+	}
+	.subNav{
 		display:none;
 	}
 }
