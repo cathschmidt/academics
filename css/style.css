@@ -531,6 +531,16 @@ nav.mainNav a.column2{
 }
 
 
+.box p.department-links{
+	font-size:0.55em;
+	color:rgb(80,80,80);
+	margin-bottom:-1em;
+	padding:0em;
+	/*background:yellow;*/
+	text-align:center;
+	border-bottom:1px solid rgb(45,45,45);
+}
+
 .hide{
 	opacity:0.0;
 	-webkit-transition: all 0.7s ease-in-out;
@@ -863,6 +873,21 @@ header{
 .galleryContainer ul{
 	padding:0em;
 }
+
+
+
+.gallery .caption{
+	float:none;
+	padding:0.5em 0em 0.5em 1em;
+	text-align:center;
+	background:rgb(250,250,250);
+/*	background:rgb(30,30,30);*/
+	color:rgb(150,150,150);
+	font-size:0.75em;
+	letter-spacing:1px;
+	/*font-family:verdana;*/
+}
+
 
 .requestInfo{
 	/*height:340px;*/
