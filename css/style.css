@@ -363,6 +363,16 @@ nav.mainNav a.column2{
 	line-height:1.6em;
 }
 
+.box h3{
+	font-family:ActaBook;
+	font-size:1.33em;
+	color:rgb(90,90,90);
+	padding:1em 0em 0em 0.75em;
+	margin:0px;
+
+
+}
+
 .statement{
 	background:rgb(20,20,20);
 	color:rgb(230,230,230);
@@ -380,6 +390,61 @@ nav.mainNav a.column2{
 	float:left;
 	width:50%;
 }
+
+
+/*- - - - - -outcomes module - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.alumniDescription{
+	/*width:50%;*/
+	width:50%;
+	float:right;
+	/*background:yellow;*/
+	/*float:left;*/
+}
+
+.box h3.alumniName{
+	width:50%;
+	/*background:red;*/
+	float:right;
+	padding:1em 1em 0em 0.5em;
+	/*margin: 0em 0em 0em 1.1em;*/
+}
+
+.alumniLink:visited article p{
+	color:rgb(40,40,40);
+}
+
+.alumniLink:hover article{
+	background:rgb(255,255,255);
+
+}
+
+.alumniLink:hover article p{
+	color:rgb(0,0,0);
+}
+
+.alumniWork{
+	float:left;
+	/*width:49%;*/
+	width:44.1%;
+	/*margin-right:1.5em;*/
+/*	max-height:200px;*/
+	margin-left:1em;
+	/*opacity:0.5;
+	 -webkit-filter: grayscale(100%); */
+	-webkit-transition:all 0.2s ease-in;
+}
+
+.alumniWork:hover{
+	-webkit-filter:grayscale(0%);
+	opacity:1.0;
+}
+
+.alumniGroup{
+	border-bottom:1px solid rgb(220,220,220);
+	padding:1em 0em 1em 0em;
+}
+
 
 .alumniFeature ul, .facultyNews ul{
 	/*-webkit-column-count:2;*/
@@ -624,15 +689,7 @@ nav.mainNav a.column2{
 
 }
 
-.box h3{
-	font-family:ActaBook;
-	font-size:1.33em;
-	color:rgb(90,90,90);
-	padding:1em 0em 0em 0.75em;
-	margin:0px;
 
-
-}
 
 .subNav, h1{
 	font-family:ProximaBold;
@@ -856,8 +913,8 @@ header{
 }
 
 .gallery img{
-	width:816px;
-	height:500px;
+	/*width:816px;
+	height:500px;*/
 	float:left;
 	
 }
@@ -942,7 +999,9 @@ header{
 	color:rgb(140,140,140);
 /*	background-color:rgb(40,40,40);*/
 	background-color:rgb(245,245,245);
-	border:1px solid rgb(170,170,170);
+	/*border:1px solid rgb(170,170,170);*/
+	border:none;
+	border-bottom:1px dotted rgb(220,220,220);
 	-webkit-transition: all 0.2s ease-in-out;
 	padding:0.5em;
 	/*-webkit-box-shadow: inset 0px 0px 10px rgb(180,180,180);*/
@@ -958,6 +1017,7 @@ header{
 	background:rgb(250,250,250);
 	-webkit-box-shadow:0px 0px 10px rgb(180,180,180);
 	color:rgb(80,80,80);
+	border-bottom:1px solid rgb(150,150,150);
 }
 
 #submit{
@@ -1030,13 +1090,14 @@ header{
  }
 
 #zip{
-	width:15%;
+	width:11.75%;
 }
 
 select{
 	-webkit-appearance:none;
-	background:rgb(230,230,230);
-	border:1px solid rgb(170,170,170);
+	background:rgb(240,240,240);
+	/*border:1px solid rgb(170,170,170);*/
+	border:none;
 	background-image:url(../img/dropdown.png);
 	background-repeat:no-repeat;
 	background-position:right;
@@ -1053,6 +1114,7 @@ select{
 	color:rgb(100,100,100);
 	margin-bottom:1em;
 	margin-top:9px;
+	margin-right:9px;
 }
 
 
