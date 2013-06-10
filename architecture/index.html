@@ -3,11 +3,14 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title>RISD | Architecture</title>
+	<link href="http://cloud.webtype.com/css/d0875aee-7039-48dc-ba03-b3d18254f9d5.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	
 	<script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/scripts.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/jquery.flexslider.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery.backstretch.min.js" type="text/javascript" charset="utf-8"></script>
+	
 	
    <link rel="stylesheet" href="../flexslider.css" type="text/css" media="screen" title="no title" charset="utf-8">
    
@@ -19,13 +22,17 @@
      });
    });
    </script>
-	
+		
+  
 </head>
 <body id="architecture" onload="">
 	
 	
 	
 	<div class="wrapper">
+
+		<!-- begin main nav -->
+
 		<nav class="mainNav">
 			<a class="home"href="/">
 				<img src="../img/risd-logo.png" width="60" height="60" alt="Risd Logo">
@@ -65,7 +72,9 @@
 				</input>
 			</div>
 		</nav>
-		
+		<!-- end main nav -->
+
+
 		<header>
 			<h1>Architecture</h1>
 			<div class="rule"></div>
@@ -73,14 +82,13 @@
 		
 		<nav id="sideBar" class="subNav">
 			<ul>
-				<li><a href="#">Graduate</a></li>
-				<li><a href="#">Undergraduate</a></li>
-				<li><a href="#">Faculty</a></li>
+				<!-- <li id="hide"><a href="#">Show Background</a></li> -->
+				<li><a href="undergraduate.html">Undergraduate</a></li>
+				<li><a href="graduate.html">Graduate</a></li>
+				<li><a href="faculty.html">Faculty</a></li>
 				<li><a href="#">Curriculum</a></li>
 				<li><a href="#">Facilities</a></li>
 				<li><a href="#">News + Research</a></li>
-				<li><a href="#">Application Process</a></li>
-				<li><a href="#">Request Information</a></li>
 				<li><a href="#">Contact</a> </li>
 			</ul>
 			
@@ -90,19 +98,33 @@
 			<a href="#architecture">Top</a>
 		</nav>
 		
-		<section class="mainContainer clearfix">
-			<div class="box heroImage">
+		<section id="mainContainer" class="mainContainer clearfix">
+			
+			<!-- begin hero image -->
+			<div class="box heroImage clearfix">
 				<img src="../img/architecture/arch-hero.jpg" alt=""/>
 				
 			</div>
-			
+
+			<!-- end hero image -->
+	
+			<!-- begin opening statement -->
+
 			<div class="box statement">
-				<p>Architecture at RISD emphasizes personal artistic sensibilities and exploring the creative process as a means of defining and articulating your own approach to spatial design.
-				</p>
+					<p>
+						Architecture at RISD emphasizes personal artistic sensibilities and exploring the creative process as a means of defining and articulating your own approach to spatial design. As a student you will be empowered and equipped to succeed in the client-based practice of architecture while understanding your role as a cultural creator.
+					</br>
+				
+					</p>
 			</div>
+
+			<!-- end opening statement -->
+
+
+			<!-- begin degree programs -->
 			
 			<div class="box degrees clearfix">
-				<h3>Degrees</h3>
+				<h2>Degree Programs</h2>
 				
 				<ul>
 					<li><a href="#">BFA/BArch</a></li>
@@ -113,31 +135,53 @@
 					<li><a href="#">MArch</a></li>
 					<li>3 Year graduate program</li>
 				</ul>
+				
 			</div>
+
+			<!-- end degree programs -->
+
+
+			<!-- begin studio gallery -->
 			
 			<div class="box gallery">
-				<h3>In the Studio</h3>
+				<h2>In the Studio</h2>
 				<div class="galleryContainer flexslider">
 						<ul class="slides">
 							<li><img src="../img/architecture/studio-02.jpg" alt=""></li>
-							<li><img src="../img/architecture/studio-01.jpg" alt=""></li>
+							<li><img src="../img/architecture/studio-05.jpg" alt=""></li>
+							<li><img src="../img/architecture/arch-hero-2.jpg" alt=""></li>
 							<li><img src="../img/architecture/studio-03.jpg" alt=""></li>
 							<li><img src="../img/architecture/studio-04.jpg" alt=""></li>
 							
 						</ul>
 				</div>
-			</div>          
+				
+			</div>     
+
+			<!-- end studio gallery -->
+
+
+		     <!-- begin student profile  -->
 			
 			<div class="box studentProfile right clearfix">
-				<h3>Student Profile</h3>
+				<h2>BArch Candidate: Tamara Tsond</h2>
 				<img src="../img/architecture/student-headshot.jpg"/>
 				<p>
-					“I came to RISD thinking that I’d like to study across a variety of disciplines, but I mostly just thought of it as a way to take a break from what I was doing architecturally. Instead, this way of thinking and working actually changed how I think of and approach my work. I quickly found that there’s this enormous hunger at RISD for interdisciplinary work that makes it easy for people to come together and collaborate. I had no idea how much that would influence my own way of thinking.” — senior Tamara Tsond »»
+
+					“I came to RISD thinking that I’d like to study across a variety of disciplines, but I mostly just thought of it as a way to take a break from what I was doing architecturally. Instead, this way of thinking and working actually changed how I think of and approach my work. I quickly found that there’s this enormous hunger at RISD for interdisciplinary work that makes it easy for people to come together and collaborate. I had no idea how much that would influence my own way of thinking.” 
+					
 				</p>
+				
 			</div>
+
+			<!-- end student profile -->
+
+
+
+			<!-- begin student work gallery -->
 			
 			<div class="box gallery ">
-				<h3>Student Work</h3>
+				<h2>Student Work</h2>
 				<div class="galleryContainer flexslider">
 					<ul class="slides">
 						<li><img src="../img/architecture/student-work-02.jpg" alt=""></li>
@@ -149,65 +193,49 @@
 				</div>
 			</div>
 			
+			<!--end student work gallery  -->
+
+
+			<!-- begin department head -->
+			
 			<div class="box facultyProfile left clearfix">
-				<h3>Head of the Architecture Department</h3>
+				<h2>Kyna Leski: Department Head</h2>
 				<img src="../img/architecture/leski-headshot.jpg"/ alt="Kyna Leski">
 				<p>
-					A principal at the busy studio 3SIX0, Professor Kyna Leski finds that helping RISD students navigate through the creative process is both personally and professionally inspiring.
 					A principal at the busy architectural studio 3SIX0, Professor Kyna Leski finds that helping RISD students navigate through the creative process is both personally and professionally inspiring. In fact, in both her teaching and private practice, she focuses on the nature of creativity and how it translates across disciplines. »
 				</p>
 			</div>
+			<!-- end department head -->
 			
-			<div class="box facultyNews">
-				<h3>Faculty in the Field</h3>
-				<ul>
-					<li>Faculty Story 1</li>
-					<li>Faculty Story 2</li>
-					<li>Faculty Story 3</li>
-					<li>Faculty Story 4</li>
-				</ul>
+			
+			
+			<!-- begin large atmospheric block -->
+
+			<div class="box atmospheric clearfix">
+				<img src="../img/architecture/arch-atmos-big-01.jpg" alt=""/>
 			</div>
 			
-			<div class="box atmospheric">
-				<img src="../img/architecture/texture-01.jpg" alt=""/>
-				
-			</div>
+			<!-- end atmospheric block -->
 			
-			<div class="box alumniFeature">
-				<h3>Notable Alumni</h3>
-				<ul>
-					
-					<ul class="alumn">
-						<li class="name">Michael Maltzan</li> 
-						<li class="description">Los Angeles architect with a strong social agenda</li>
-					</ul>
-					
-					<ul class="alumn">
-						<li class="name">Deborah Berke</li> 
-						<li class="description">practicing in NYC, teaching at Yale</li>
-					</ul>
-					
-					<ul class="alumn">
-						<li class="name">Victoria Rospond + Lea Cloud</li> 
-						<li class="description">thriving architectural partnership</li>
-					</ul>
-					
-					<ul class="alumn">
-						<li class="name">Ken Lewis</li> 
-						<li class="description">building skyscrapers @SOM</li>
-					</ul>
-				</ul>
-			</div>
 			
-			<div class="box statement quote">
+
+		
+			
+			<div class="box statement">
 				<p>“RISD offers something timeless – something that doesn’t become obsolete. But there’s not going to be this book that we’re going to hand you with all the answers. We’re going to <br> challenge you.”</p>
-				<p>Kyna Leski / Professor + Department Head / Architecture</p>
-			</div>
-			
-			<div class="box atmospheric">
-				<img src="../img/architecture/texture-02.jpg" alt=""/>
 				
 			</div>
+			
+			
+			<div class="box atmospheric clearfix">
+				<img src="../img/architecture/texture-01.jpg" alt=""/>
+			</div>
+			
+			
+			
+			
+			
+			
 			
 			<div class="box links">
 				<ul>
@@ -215,12 +243,24 @@
 					<li><a href="https://twitter.com/RISDARCH" target="new">@risdarch</a></li>	
 					<li><a href="http://www.flickr.com/photos/risdarchitecture" target="new">RISD Architecture on Flickr</a></li>
 				</ul>
+				
+				<div class="ingredients">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
 			</div>
 			
-			<div class="box statement requestInfo">
+			<!-- begin request info -->
+			<div class="box requestInfo clearfix">
+				<h2>
+					Get in Touch
+				</h2>
 				<p>
-					Amazing things happen to students who come here. To learn more about how you can bring your ideas to life at RISD, please submit this form and we will send you additional information.
+					Amazing things happen to students who come here. <wbr/>To learn more about how you can bring your ideas to life at RISD, please submit this form and we will send you additional information.
 				</p>
+				
+				
 				<form>
 					
 					<input type="text" id="firstname" value="first name"></input>
@@ -247,40 +287,73 @@
 						<option>transfer</option>
 						<option>graduate student</option>
 					</select>
+
+					<!-- <input id="submit" class="two" type="submit" value="submit">??</input> -->
+
+					<button id="submit" type="submit">
+						send me more information
+						<svg version="1.1"  class="nextArrow" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="155px" height="158px" viewBox="0 0 155 158" enable-background="new 0 0 155 158" xml:space="preserve">
+<g>
+	<g>
+		<path fill="#C8C8C8" d="M54.535,102.344l23.691-23.688L54.535,54.969L71.672,38l40.824,40.656L71.672,119.48L54.535,102.344z"/>
+	</g>
+	<g>
+		<path fill="#C8C8C8" d="M77,149c-38.047,0-69-30.953-69-69s30.953-69,69-69s69,30.953,69,69S115.047,149,77,149z M77,17
+			c-34.738,0-63,28.262-63,63s28.262,63,63,63s63-28.262,63-63S111.738,17,77,17z"/>
+	</g>
+</g>
+</svg>
+
+
+					</button>
+
 				</form>
+				
+				
+				
+			
 			</div>
 			
-			<div class="box additionalInfo">
-				
-			</div>
+			<!--  end request info -->
+			
+			
+			
 			
 			<div class="box departmentList clearfix">
 				<p>
-					<a href="#">Apparel Design</a> 
-					<a href="#">Architecture</a> 
-					<a href="#">Ceramics</a> 
-					<a href="#">Digital + Media</a> 
-					<a href="#">Film/Animation/Video</a> 
-					<a href="#">Furniture Design</a> 
-					<a href="#">Glass</a> 
-					<a href="#">Graphic Design</a> 
-					<a href="#">Illustration</a> 
-					<a href="#">Industrial Design</a> 
-					<a href="#">Interior Architecture</a> 
-					<a href="#">Jewelry + Metalsmithing</a> 
-					<a href="#">Landscape Architecture</a> 
-					<a href="#">Painting</a> 
-					<a href="#">Photography</a> 
-					<a href="#">Printmaking</a> 
-					<a href="#">Sculpture</a> 
-					<a href="#">Teaching + Learning in Art + Design</a> 
-					<a href="#">Textiles</a> 
+					<a id="apparel-link" href="#">Apparel Design</a> 
+					<a id="architecture-link" href="../architecture/index.html">Architecture</a> 
+					<a id="ceramics-link" href="#">Ceramics</a> 
+					<a id="digital-media-link" href="#">Digital + Media</a> 
+					<a id="fav-link" href="../film-animation-video/index.html">Film/Animation/Video</a> 
+					<a id="furniture-link" href="#">Furniture Design</a> 
+					<a id="glass-link" href="#">Glass</a> 
+					<a id="graphic-design-link" href="#">Graphic Design</a> 
+					<a id="illustration-link" href="#">Illustration</a> 
+					<a id="industrial-design-link" href="#">Industrial Design</a> 
+					<a id="interior-architecture-link" href="#">Interior Architecture</a> 
+					<a id="jewelry-link" href="#">Jewelry + Metalsmithing</a> 
+					<a id="landscape-arch-link" href="#">Landscape Architecture</a> 
+					<a id="painting-link" href="#">Painting</a> 
+					<a id="photography-link" href="#">Photography</a> 
+					<a id="printmaking-link" href="#">Printmaking</a> 
+					<a id="sculpture-link" href="#">Sculpture</a> 
+					<a id="tlad-link" href="#">Teaching + Learning in Art + Design</a> 
+					<a id="textiles-link" href="../textiles/index.html">Textiles</a> 
 				</p>
+				
 			</div>
 			
 		</section>
 		
 		
 	</div>
+	
+    <script>
+    	$.backstretch("../img/architecture/arch-bg-4.jpg");
+   		
+    </script>
+	
 </body>
 </html>
