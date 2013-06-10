@@ -692,6 +692,10 @@ header{
 	/*margin: 0em 0em 0em 1.1em;*/
 }
 
+.alunniLink:link article p{
+	text-decoration:none;
+	color:rgb(40,40,40);
+}
 .alumniLink:visited article p{
 	color:rgb(40,40,40);
 }
@@ -782,6 +786,11 @@ header{
 	border-bottom:1px dotted rgb(200,200,200);
 	margin:0px;
 }
+
+a.alumniLink a:link{      color:red; text-decoration:none;}
+.alumniProfile a:hover{	    text-decoration:none;}
+.alumniProfile a:visited{	text-decoration:none;}
+
 
 /* = 11. Department Site Links = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */
 
