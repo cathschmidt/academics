@@ -1,4 +1,41 @@
 
+/*
+ 
+ 00. Import 
+ 
+ 01. Main Nav
+ 
+ 02. Sub Nav
+ 
+ 03. Page Structure
+ 
+ 04. Hero Image
+ 
+ 05. Statement
+ 
+ 06. Degree Programs
+ 
+ 07. Student Work
+ 
+ 08. Department Head
+ 
+ 09. Atmospheric Images
+ 
+ 10. Department Page Links
+ 
+ 11. Form
+ 
+ 12. Dept. Links
+
+ 13. Color
+ 
+
+*/
+
+
+/* = = = = 0. Import = = = = = = = = = = = = = = = = = = = = = = = = = =*/
+
+
 @font-face{
 	font-family: "ActaLight";
 	src:url('../fonts/ActaDeck-Light.otf');
@@ -20,26 +57,15 @@
 }
 
 
-/* = = = = = = = STRUCTURE = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
-
-body{
-	background:rgb(128,135,155);
-	margin:0px;
-	font-size:14px;
-}
-
-.wrapper{
-	width:980px;
-	margin:0 auto;
-/*	background:yellow;*/
-}
-
-.subNav, h1, .box, .rule{
-	-webkit-box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+@font-face{
+	font-family:"ModernPictograms";
+	src:url('../fonts/modernpics.otf');
 }
 
 
-/* ----- NEW NAV -----------*/
+/* = 01. Main Nav = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+/* site wide navigation */
+
 nav.mainNav{
 	width:975px;
 	height:72px;
@@ -200,15 +226,21 @@ nav.mainNav a.column2{
 	-webkit-box-shadow: inset 0px 0px 10px rgb(200,200,200);
 }
 
-/*- - - - end MAIN NAV - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-/*- - - - - subNav - - - - - - - - - - - - - - - - - - - - - -*/
+
+/* = 02. Sub Nav = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 .subNav{
 	width:155px;
 	float:left;
 	
 }
+
+.subNav, h1{
+	font-family:ProximaBold;
+}
+
+
 
 .subNav ul{
 	padding:0px;
@@ -218,6 +250,7 @@ nav.mainNav a.column2{
 
 .subNav ul li{
 	border-bottom:1px solid rgb(120,10,10);
+	text-align:center;
 }
 
 
@@ -231,6 +264,9 @@ nav.mainNav a.column2{
 	letter-spacing:2px;
 	text-transform:uppercase;
 	-webkit-transition:all 0.2s ease-out;
+	  -moz-transition: all 0.2s ease-out;
+	    -o-transition: all 0.2s ease-out;
+		   transition: all 0.2s ease-out;
 }
 
 .subNav ul li a:visited{
@@ -241,20 +277,64 @@ nav.mainNav a.column2{
 	background:rgb(113,4,4);
 }
 
-/* - - end sub nav - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* = 03. Page Structure  = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+body{
+	/*background:rgb(128,135,155);*/
+	background:rgb(240,240,240);
+	margin:0px;
+	font-size:14px;
+}
+
+header h1{
+	display:inline-block;
+	padding:0.5em;
+	text-transform:uppercase;
+	color:rgb(250,250,250);
+	font-size:1.85em;
+	/*font-size:8em;*/
+	letter-spacing:0.125em;
+	margin:0px;
+}
+
+header{
+	display:block;
+
+	margin-bottom:9px;
+	position:relative;
+}
+
+.rule{
+	display:inline-block;
+	position:absolute;
+	width:72%;
+	right:0px;
+	bottom:0px;
+	height:9px;
+	
+}
+
+.wrapper{
+	width:980px;
+	margin:0 auto;
+/*	background:yellow;*/
+}
+
+.subNav, h1, .box, .rule{
+	-webkit-box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+}
 
 
-
-
-/*- - - - -link to top - - - - - - - - - - - - - - - - - - - - - -*/
-
+/*link to top */
 #top{
 	width:155px;
 	background:rgba(30,30,30,0.2);
 	position:fixed;
 	bottom:-4em;
-	-webkit-transition:all 0.2s ease-in-out;
-
+	-webkit-transition:all 0.2s ease-out;
+	  -moz-transition: all 0.2s ease-out;
+	    -o-transition: all 0.2s ease-out;
+		   transition: all 0.2s ease-out;
 	
 }
 
@@ -284,7 +364,7 @@ nav.mainNav a.column2{
 	color:rgba(255,255,255,0.9);
 }
 
-/*- end link to top - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/*- end link to top -*/
 
 
 .mainContainer{
@@ -292,6 +372,81 @@ nav.mainNav a.column2{
 	float:right;
 	overflow:hidden;
 }
+
+/* 
+ * main box module 
+ */
+.box{
+	width:816px;
+	background:rgb(250,250,250);
+	margin:0px 0px 9px 0px;
+	position:relative;
+}
+
+.box ul{
+	margin:0px;
+	padding:1em;
+	list-style:none;
+}
+
+.box p{
+	margin:0px;
+	padding:1em;
+	line-height:1.6em;
+}
+
+.box h3{
+	font-family:ActaBook;
+	font-size:1.33em;
+	color:rgb(90,90,90);
+	padding:1em 0em 0em 0.75em;
+	margin:0px;
+}
+
+.box p{
+	font-family:ProximaReg;
+	font-size:1.1em;
+}
+
+.box p.department-links{
+	font-size:0.55em;
+	color:rgb(80,80,80);
+	margin-bottom:-1em;
+	padding:0em;
+	/*background:yellow;*/
+	text-align:center;
+	border-bottom:1px solid rgb(45,45,45);
+}
+
+.box ul li{
+	font-family:ActaBook;
+}
+
+.box img{
+	line-height:0px;
+}
+
+
+.quote{
+	text-indent:-0.45em;
+}
+
+.box h2{
+	background:rgb(240,240,240);
+	/*background:rgb(40,40,40);*/
+	font-family:ActaBook;
+	font-size:1.71em;
+	font-weight:normal;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding:0.75em 0.5em 0.5em 0.5em;
+	color:rgb(120,120,120);
+	border-bottom:1px solid rgb(220,220,220);
+
+}
+
+
+/* clear fix - -- */
 
 .clearfix:before,
 .clearfix:after {
@@ -312,12 +467,13 @@ nav.mainNav a.column2{
     *zoom: 1;
 }
 
-.box{
-	width:816px;
-	background:rgb(250,250,250);
-	margin:0px 0px 9px 0px;
-	
-}
+/*end clear fix - -*/
+
+
+
+
+
+/* = 04. Hero Image Module = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 .heroImage{
 	background:rgb(200,200,200);
@@ -328,80 +484,45 @@ nav.mainNav a.column2{
 	width:816px;
 	height:500px;
 	margin-bottom:0px;
+	float:left;
 }
 
-.atmospheric{
-	padding:0px;
-}
-.atmospheric img{
-	width:816px;
-	height:250px;
-	background:rgb(220,220,220);
-	margin:0px;
-	display:inline-block;
-	
-}
 
-.box ul{
-	margin:0px;
-	padding:1em;
-	list-style:none;
-}
+/* = 05. Statement = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
-.box p{
-	margin:0px;
-	padding:1em;
-}
 
 .statement{
-	background:rgb(30,30,30);
+	background:rgb(20,20,20);
 	color:rgb(230,230,230);
-}
-
-
-.alumniFeature ul{
-	-webkit-column-count:2;
-	-webkit-column-gap:2em;
-	/*background:yellow;*/
-	padding:1em 1em 0em 1em;
-
-}
-
-.alumniFeature ul.alumn{
-	-webkit-column-count:1;
-/*	background:orange;*/
-	margin:0px;
-	padding:0px;
-}
-
-.alumniFeature ul.alumn li.name{
-	border-bottom:none;
-	font-size:1.25em;
-	margin-bottom:0px;
 	
 }
 
-.alumniFeature ul.alumn li.description{
-	font-family:ProximaReg;
-	font-size:1em;
-	color:rgb(100,100,100);
-	padding:0.5em 0em;
-	margin-bottom:2em;
+
+.statement p{
+	font-family:ActaLight;
+	
 }
 
-
-.alumniFeature ul li{
-	border-bottom:1px dotted rgb(30,30,30);
-	margin:0px;
+.statement p:nth-child(2){
+	font-size:0.75em;
+	margin-top:0.75em;
+	color:rgb(120,120,120);
+	
 }
 
-.departmentList{
-	background:rgb(30,30,30);
-	color:rgb(250,250,250);
+.statement p:first-child{
+	font-size:1.75em;
+	line-height:1.45em;
+	color:white;
+	margin-top:0px;
 	margin-bottom:0px;
-	padding-bottom:1.5em;
+	width:90%;
 }
 
+
+
+
+/* = 06. Degrees Offered = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 /* degrees */
 .degrees ul{
@@ -415,14 +536,15 @@ nav.mainNav a.column2{
 	text-decoration:none;
 	display:block;
 	padding-top:0.75em;
-	padding-bottom:0.75em;
+	padding-bottom:0.125em;
+	/*padding-bottom:0.75em;*/
 	/*background:yellow;*/
-	color:rgb(200,200,200);
+	color:rgb(150,150,150);
 	-webkit-transition:all 0.2s ease-in;
 }
 
 .degrees ul li:first-child a:visited{
-	color:rgb(200,200,200);
+	color:rgb(150,150,150);
 }
 
 .degrees ul li:first-child a:hover{
@@ -432,17 +554,245 @@ nav.mainNav a.column2{
 .degrees ul li:first-child{
 	font-size:4em;
 	text-align:center;
-	color:rgb(200,200,200);
+	color:rgb(150,150,150);
 	border-bottom:1px solid rgb(200,200,200);
-	padding:0.25em;
+	/*padding:0.25em;*/
 }
 
 .degrees ul li:last-child{
 	font-family:ProximaReg;
-	padding-bottom:1em;
-	margin-top:1em;
+	font-size:1.25em;
+	padding-bottom:4em;
+	padding-top:1em;
+	color:rgb(150,150,150);
+	/*margin-top:1em;*/
+	text-align:center;
 }
 
+#fav .degrees ul{
+	margin:0 auto;
+	float:none;
+}
+
+
+
+/* = 07. Student / Department Head Profile  = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+
+.studentProfile img, .facultyProfile img{
+	max-width:40%;
+	max-height:40%;
+	padding:1em;
+	 -webkit-filter: grayscale(100%);
+}
+
+.studentProfile p{
+	/*background:yellow;
+	border-bottom:1px solid green;*/
+}
+.studentProfile p:nth-child(4){
+	padding:0em 1em 1em 1em;
+}
+
+.studentProfile a:link{ color:rgba(164,27,27,1.0); text-decoration:none; -webkit-transition:all 0.2s ease-in;}
+.studentProfile a:visited{ color:rgba(164,27,27,1.0); }
+.studentProfile a:hover{ color:rgb(113,4,4); }
+
+
+/*either a left or right arrangement for the profile module*/
+.right p{
+	float:right;
+	width:50%;
+}
+
+.right img{
+	float:left;
+}
+
+.left p{
+	float:left;
+	width:50%;
+}
+
+.left img{
+	float:right;
+}
+
+
+/* = 08. Image Galleries  = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.gallery{
+	overflow:hidden;
+}
+
+.gallery img{
+	/*width:816px;
+	height:500px;*/
+	/*float:left;*/
+	
+}
+
+.galleryContainer{
+	width:816px;
+	/*height:500px;*/
+	background:rgb(220,220,220);
+}
+
+
+.galleryContainer ul{
+	padding:0em;
+}
+
+
+.gallery .caption{
+	float:none;
+	padding:0.5em 0em 0.5em 1em;
+	text-align:center;
+	background:rgb(250,250,250);
+/*	background:rgb(30,30,30);*/
+	color:rgb(150,150,150);
+	font-size:0.75em;
+	letter-spacing:1px;
+	/*font-family:verdana;*/
+}
+
+
+/*= 09. Atmospheric Images = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+
+.atmospheric{
+	padding:0px;
+}
+.atmospheric img{
+	width:816px;
+	/*height:250px;*/
+	background:rgb(220,220,220);
+	margin:0px;
+	display:inline-block;
+	float:left;
+	
+}
+
+
+/*= 10. Alumni Profiles = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.alumniDescription{
+	/*width:50%;*/
+	width:50%;
+	float:right;
+	/*background:yellow;*/
+	/*float:left;*/
+}
+
+.box h3.alumniName{
+	width:50%;
+	/*background:red;*/
+	float:right;
+	padding:0em 1em 0em 0em;
+	/*margin: 0em 0em 0em 1.1em;*/
+}
+
+.alunniLink:link article p{
+	text-decoration:none;
+	color:rgb(40,40,40);
+}
+.alumniLink:visited article p{
+	color:rgb(40,40,40);
+}
+
+.alumniLink:hover article{
+	background:rgb(255,255,255);
+
+}
+
+.alumniLink:hover article p{
+	color:rgb(0,0,0);
+}
+
+.alumniWork{
+	float:left;
+	/*width:49%;*/
+	width:44.1%;
+	/*margin-right:1.5em;*/
+/*	max-height:200px;*/
+	margin-left:1em;
+	/*opacity:0.5;
+	 -webkit-filter: grayscale(100%); */
+	-webkit-transition:all 0.2s ease-in;
+}
+
+.alumniWork:hover{
+	-webkit-filter:grayscale(0%);
+	opacity:1.0;
+}
+
+.alumniGroup{
+	border-bottom:1px solid rgb(220,220,220);
+	padding:1em 0em 1em 0em;
+}
+
+
+.alumniFeature ul, .facultyNews ul{
+	/*-webkit-column-count:2;*/
+	
+	/*background:yellow;*/
+	padding:1em 1em 0em 1em;
+
+}
+
+.alumniFeature ul.alumn, .facultyNews ul.facultyStory{
+	-webkit-column-count:1;
+/*	background:orange;*/
+	margin:0px;
+	padding:0px;
+	
+}
+
+.alumniFeature ul.alumn{
+	/*margin-left:50%;*/
+	width:50%;
+	float:left;
+	margin-left:50%;
+	/*background:yellow;*/
+	/*position:absolute;*/
+}
+
+.alumniFeature ul.alumn li.name, .facultyNews ul.facultyStory li.facultyHeadline{
+	border-bottom:none;
+	font-size:1.25em;
+	line-height:1.33em;
+	margin-bottom:0px;
+	color:rgb(100,100,100);
+	-webkit-transition:all 0.2s ease-in;
+	
+}
+
+.alumniFeature ul.alumn li.description, .facultyNews ul.facultyStory li.story{
+	font-family:ProximaReg;
+	font-size:1.1em;
+	color:rgb(30,30,30);
+	padding:0.5em 0em;
+	margin-bottom:2em;
+	line-height:1.45em;
+}
+
+.alumniFeature ul.alumn, .facultyNews ul.facultyStory:hover li.facultyHeadline, li.story{
+	color:red;
+	cursor:pointer;
+}
+
+
+.alumniFeature ul li, .facultyNews ul li{
+	border-bottom:1px dotted rgb(200,200,200);
+	margin:0px;
+}
+
+a.alumniLink a:link{      color:red; text-decoration:none;}
+.alumniProfile a:hover{	    text-decoration:none;}
+.alumniProfile a:visited{	text-decoration:none;}
+
+
+/* = 11. Department Site Links = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */
 
 .links{
 	background:rgb(30,30,30);
@@ -472,146 +822,167 @@ nav.mainNav a.column2{
 	background:rgb(230,230,230);
 }
 
+/* = 12. Get Info Form = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
-
-/* - - - - COLOR - - - - - - - - - - - - - - - - - - - - - - - - */
-
-#architecture nav.subNav,#architecture header h1,#architecture .rule{ background:rgba(164,27,27,1.0);} 
-#architecture ::selection{ background:rgba(164,27,27,1.0); color:rgba(250,250,250,1.0); }
-
-#fav nav.subNav,#fav header h1,#fav .rule{ background:rgba(77,32,145,1.0);}
-#fav ::selection{ background:rgba(77,32,145,1.0); color:rgba(250,250,250,1.0);}
-#fav .subNav ul li a:hover{ background:rgb(59,24,111); }
-#fav .subNav ul li{ border-bottom:1px solid rgb(59,24,111);}
-#fav .rule{width:64.5%; }
-
-#textiles nav.subNav, #textiles header h1, #textiles .rule{ background:rgba(255,143,8,1.0);}
-#textiles ::selection{ background:rgba(255,143,8,1.0); color:rgba(250,250,250,1.0); }
-#textiles .subNav ul li a:hover{ background:rgb(211,115,0); }
-#textiles .subNav ul li{ border-bottom:1px solid rgb(211,115,0);}
-#textiles .rule{width:85.5%;}
-
-
-/* - - - TYPOGRAPHY - - - - - - - - - - - - - - - - - - - - - -  */
-
-.box p{
-	font-family:ProximaReg;
+.requestInfo{
+	/*height:340px;*/
+}
+.requestInfo p{
+	float:left;
+	width:45%;
 }
 
-.box ul li{
-	font-family:ActaBook;
+.requestInfo .contact{
+	float:left;
+	position:absolute;
+	top:150px;
+	border-top:1px solid rgb(220,220,220);
+	width:47%;
 }
 
-
-
-.quote{
-	text-indent:-0.45em;
-}
-
-.box h3{
-	background:rgb(240,240,240);
-	font-family:ProximaReg;
-	font-size:1em;
-	font-weight:normal;
-	margin-top:0px;
+.requestInfo ul{
 	margin-bottom:0px;
-	padding:0.25em 0.25em 0.25em 1em;
-	color:rgb(90,90,90);
-	
-
+	/*background:yellow;*/
+	padding-bottom:0px;
+	width:42.5%;
+	float:left;
 }
 
-.subNav, h1{
+.requestInfo ul li{
+	font-family:ProximaReg;
+	font-size:13px;
+	line-height:20px;
+	color:rgb(140,140,140);
+}
+
+.requestInfo ul li:first-child{
 	font-family:ProximaBold;
 }
 
-header h1{
-	display:inline-block;
-	padding:0.5em;
-	text-transform:uppercase;
-	color:rgb(250,250,250);
-	font-size:1.45em;
-	letter-spacing:0.125em;
-	margin:0px;
+/* forms   */
+
+.box form{
+	width:50%;
+	margin-left:1em;
+	padding-top:0.75em;
+	
 }
 
-header{
-	display:block;
-
+.box form input[type="text"]{
+	font-family:ProximaReg;
+	font-size:1em;
+	color:rgb(140,140,140);
+	background-color:rgb(245,245,245);
+	border:none;
+	border-bottom:1px dotted rgb(220,220,220);
+	-webkit-transition: all 0.2s ease-in-out;
+	padding:0.5em;
+	
+	
+	margin-right:9px;
 	margin-bottom:9px;
+	
+}
+
+.box form input[type="text"]:focus{
+	background:rgb(250,250,250);
+	-webkit-box-shadow:0px 0px 10px rgb(180,180,180);
+	color:rgb(80,80,80);
+	border-bottom:1px solid rgb(150,150,150);
+}
+
+#submit{
+	padding:0.5em 3em 0.5em 3em;
+	font-family:ProximaReg;
+	font-size:1.25em;
+	margin-bottom:1em;
+	color:white;
+	border-top:1px solid rgb(240,240,240);
 	position:relative;
 }
 
-.rule{
-	display:inline-block;
+#submit.two{
+	border:1px solid rgb(150,150,150);
+	background:rgb(250,250,250);
+
+}
+
+.submitArrow{
+	font-family:ModernPictograms;
+	font-size:1.5em;
 	position:absolute;
-	width:78%;
 	right:0px;
-	bottom:0px;
-	height:9px;
-	
+	top:0px;
+	width:1.5em;
+	width:1em;
+	border-radius:0.5em;
+	border:2px solid rgb(250,250,250);
+	padding:0px;
 }
 
-/*header:after{
-	content:" s";
-	display:block;
-	background-color:blue;
-	width:75%;
-	bottom:0px;
-	position:static;
-	right:0px;
-	float:right;
-	
-	
-}*/
-
-.statement{
-	
+.nextArrow {
+	width:20px;
+	height:20px;
+	position:absolute;
+	right:20px;
+	top:10px;
 }
 
-.statement p{
-	font-family:ActaLight;
+.nextArrow path{
+	fill:rgb(0,0,0);
+}
+
+.nextArrow:hover path{
+	fill:white;
+}
+
+#architecture submit.two{
+	background:none;
+}
+
+
+#firstname, #lastname, #email, #phone{
+	width:42%;
+}
+
+#street{
+	width:49%;
+}
+ #city{
+	 width:35%;
 	
+ }
+
+#zip{
+	width:11.75%;
 }
 
-.statement p:last-child{
-	font-size:0.75em;
-	margin-top:0.75em;
-	color:rgb(120,120,120);
+select{
+	-webkit-appearance:none;
+	background:rgb(240,240,240);
+	/*border:1px solid rgb(170,170,170);*/
+	border:none;
+	background-image:url(../img/dropdown.png);
+	background-repeat:no-repeat;
+	background-position:right;
 	
-}
-
-.statement p:first-child{
-	font-size:1.75em;
-	line-height:1.45em;
-	color:white;
-	margin-top:0px;
-	margin-bottom:0px;
+	-webkit-border-radius:0px;
+	-webkit-box-shadow:none;
 	
-	width:90%;
-}
-
-.quote p:first-child{
-	padding-bottom:0em;
-}
-
-.quote p:last-child{
+	padding:0.5em 1em 0.5em 0.5em;
 	font-family:ProximaReg;
-	font-size:1.125em;
-	margin-top:0px;
-	margin-left:1.25em;
-	padding-bottom:2.5em;
+	border-radius:0px;
+	font-size:1em;
+	color:white;
+	
+	color:rgb(100,100,100);
+	margin-bottom:1em;
+	margin-top:9px;
+	margin-right:9px;
 }
 
 
-.studentProfile img, .facultyProfile img{
-	max-width:40%;
-	max-height:40%;
-	padding:1em;
-	 -webkit-filter: grayscale(100%);
-}
-
-/*department list*/
+/* = 13. Department List / Footer = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 .departmentList p{
 	text-align:center;
@@ -631,6 +1002,7 @@ header{
 .departmentList p a:link{
 	color:rgb(230,230,230);
 	text-decoration:none;
+	-webkit-transition:all 0.2s ease-in-out;
 	
 }
 
@@ -647,6 +1019,204 @@ header{
 	text-align:center;
 }
 
+
+/* = 14. Department Colors = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+#architecture nav.subNav,#architecture header h1, #architecture form #submit, #architecture .rule{ background:rgba(164,27,27,1.0);} 
+#architecture ::selection{ background:rgba(164,27,27,1.0); color:rgba(250,250,250,1.0); }
+#architecture h1.title{color:rgba(184,47,47,1.0); background:rgb(113,4,4);}
+#architecture #undergraduate.rule{width:40.25%;}
+#architecture #graduate.rule{width:51.33%;}
+
+#architecture-link:hover{color:rgba(164,27,27,1.0);}
+
+#fav nav.subNav,#fav header h1,#fav .rule{ background:rgba(77,32,145,1.0);}
+#fav ::selection{ background:rgba(77,32,145,1.0); color:rgba(250,250,250,1.0);}
+#fav .subNav ul li a:hover{ background:rgb(59,24,111); }
+#fav .subNav ul li{ border-bottom:1px solid rgb(59,24,111);}
+#fav .rule{width:53.25%; }
+#fav h1.title{ color: rgba(107,62,175,1.0); background:rgb(59,24,111);}
+#fav #undergraduate.rule{width:21.5%;}
+
+#fav-link:hover{color:rgba(77,32,145,1.0);}
+
+#industrial-design nav.subNav,#industrial-design header h1, #industrial-design form #submit, #industrial-design .rule{ background:rgba(168,60,14,1.0);}
+#industrial-design .subNav ul li a:hover{ background:rgb(128,46,11); }
+#industrial-design .subNav ul li{ border-bottom:1px solid rgb(128,46,11);}
+#industrial-design .rule{width:63.5%;}
+
+
+#sculpture nav.subNav,#sculpture header h1,#sculpture .rule{ background:rgba(0,204,187,1.0);}
+#sculpture ::selection{ background:rgba(0,204,187,1.0); color:rgba(250,250,250,1.0);}
+#sculpture .subNav ul li a:hover, #sculpture form #submit:hover{ background:rgb(0,166,152); }
+#sculpture .subNav ul li{ border-bottom:1px solid rgb(0,166,152);}
+
+#sculpture .rule{width:77.5%;}
+
+#textiles nav.subNav, #textiles header h1, #textiles form #submit, #textiles .rule{ background:rgba(255,143,8,1.0);}
+#textiles ::selection{ background:rgba(255,143,8,1.0); color:rgba(250,250,250,1.0); }
+#textiles .subNav ul li a:hover, #textiles form #submit:hover{ background:rgb(211,115,0); }
+#textiles .subNav ul li{ border-bottom:1px solid rgb(211,115,0);}
+#textiles .rule{width:81.5%;}
+#textiles form #submit{border-top:1px solid rgb(211,115,0); border-bottom:2px solid rgb(200,105,0); border-right:2px solid rgb(200,105,0);}
+
+#textiles-link:hover{color:rgba(255,143,8,1.0);}
+
+#academics nav.subNav, #academics header h1, #academics .rule{ background:rgba(0,161,51,1.0);} 
+#academics ::selection{ background:rgba(0,161,51,1.0); color:rgba(250,250,250,1.0); }
+#academics .subNav ul li a:hover{ background:rgb(0,133,42); }
+#academics .subNav ul li{ border-bottom:1px solid rgb(0,133,42);}
+#academics .rule{width:82.5%; }
+
+
+/*= 15. Media Queries = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+/*iPhone Styles*/
+@media (max-width: 480px) {
+	.subNav{
+		display:none;
+	}
+	.box{
+		width:90%;
+		margin:4px auto;
+	}
+	.wrapper{
+		width:100%;
+	}
+	
+	header{
+		width:90%;
+		margin:4px auto;
+	}
+	.rule{
+		width:40%;
+	}
+	
+	.mainContainer{
+		width:100%;
+		margin:0 auto;
+	}
+	
+	.atmospheric img{
+		max-width:100%;
+		max-height:20%;
+	}
+	
+	.box img{
+		max-width:100%;
+		height:auto;
+	}
+	
+	.box ul{
+		-webkit-column-count:1;
+	}
+	
+	.mainNav{
+		display:none;
+	}
+}
+
+@media (max-width:1024){
+	.box{
+		width:700px;
+		border:10px solid yellow;
+	}
+	.subNav{
+		display:none;
+	}
+}
+
+
+
+/*= 15. Expired or Legacy Styles = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+/*      These styles were for older iterations and ideas that are no longer in play
+        but maybe there's something interesting here?
+ */
+
+.box p.moduleIntro{
+	font-size:2em;
+	float:left;
+	width:50%;
+}
+
+.facultyNews ul ul:nth-child(2){
+	margin-bottom:10px;
+}
+
+.departmentList{
+	background:rgb(30,30,30);
+	color:rgb(250,250,250);
+	margin-bottom:0px;
+	padding-bottom:1.5em;
+}
+
+
+.hide{
+	opacity:0.0;
+	-webkit-transition: all 0.7s ease-in-out;
+}
+
+.quote p:first-child{
+	padding-bottom:0em;
+}
+
+.quote p:nth-child(2){
+	font-family:ProximaReg;
+	font-size:1.125em;
+	margin-top:0px;
+	margin-left:1.25em;
+	padding-bottom:2.5em;
+}
+
+.ingredients{
+	position:absolute;
+	top:0px;
+	right:0px;
+	left:0px;
+	bottom:0px;
+	width:100%;
+	height:100%
+	background:rgba(0,0,0,0.85);
+	opacity:0.0;
+	-webkit-transition:all 0.2s ease-in;
+	display:none;
+}
+
+.box .ingredients p{
+	color:rgb(230,230,230);
+	font-family:helvetica;
+	font-size:18px;
+	line-height:28px;
+	width:75%;
+	text-align:left;
+	margin:0px auto;
+	float:none;
+
+}
+
+.box:hover .ingredients{
+	opacity:1.0;
+	-webkit-transition-property:opacity;
+	-webkit-transition-delay: 1.75s;
+}
+
+
+/* careers */
+.careers ul{
+	font-size:2em;
+	-webkit-column-count:2;
+}
+
+
+
+/*.careers ul li{
+	line-height:1.25em;
+	font-family:ProximaBold;
+}*/
+
+
+
+
 /*.departmentList ul li:after{
 	content:" .";
 	display:inline;
@@ -660,111 +1230,28 @@ header{
 */
 
 
-.right p{
-	float:right;
-	width:50%;
+
+
+
+
+
+
+
+
+
+
+/* Faculty Page */
+
+.faculty-list{
+	/*background:yellow;*/
+	-webkit-column-count:3;
 }
 
-.right img{
-	float:left;
-}
-
-.left p{
-	float:left;
-	width:50%;
-}
-
-.left img{
-	float:right;
-}
-
-
-.gallery{
-	overflow:hidden;
-}
-
-.gallery img{
-	width:816px;
-	height:500px;
-	float:left;
-	
-}
-
-
-.galleryContainer{
-	width:816px;
-	height:500px;
-	background:rgb(220,220,220);
-}
-
-
-.galleryContainer ul{
-	padding:0em;
-}
-
-
-/* - - - - - FORMS -- - - - -- - - - - - - - - - - - - - - - - - - - - - -*/
-.box form{
-	width:95%;
-	/*background:rgba(100,100,100, 0.2);*/
-	margin:0px auto;
-}
-
-.box form input[type="text"]{
+.box .faculty-list li{
 	font-family:ProximaReg;
-	font-size:1em;
-	color:rgb(80,80,80);
-	background-color:rgb(40,40,40);
-	border:1px solid rgb(10,10,10);
-	-webkit-transition: all 0.2s ease-in-out;
-	padding:0.5em;
-	-webkit-box-shadow: inset 0px 0px 10px rgb(20,20,20);
-	
-	margin-right:9px;
-	margin-bottom:9px;
-	
+	line-height:2em;
+
 }
-
-.box form input[type="text"]:focus{
-	background:rgb(250,250,250);
-	-webkit-box-shadow:0px 0px 10px rgb(30,30,30);
-}
-
-#firstname, #lastname, #email, #phone{
-	width:45%;
-}
-
-#street, #city{
-	width:35%;
-}
-
-#zip{
-	width:10%;
-}
-
-select{
-	-webkit-appearance:none;
-	background:rgb(40,40,40);
-	background-image:url(../img/dropdown.png);
-	background-repeat:no-repeat;
-	background-position:right;
-	
-	-webkit-border-radius:0px;
-	-webkit-box-shadow:none;
-	
-	padding:0.5em 1em 0.5em 0.5em;
-	font-family:ProximaReg;
-	border-radius:0px;
-	font-size:1em;
-	color:white;
-	border:none;
-	color:rgb(100,100,100);
-	margin-bottom:36px;
-	margin-top:9px;
-}
-
-
-/* - - - -  - - - - - - - - - - - - - */
 
 
 

@@ -8,6 +8,7 @@
 	<script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/scripts.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/jquery.flexslider.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery.backstretch.min.js" type="text/javascript" charset="utf-8"></script>
 	
    <link rel="stylesheet" href="../flexslider.css" type="text/css" media="screen" title="no title" charset="utf-8">
    
@@ -73,14 +74,13 @@
 		
 		<nav id="sideBar" class="subNav">
 			<ul>
-				<li><a href="#">Graduate</a></li>
+				<!-- <li id="hide"><a href="#">Show Background</a></li> -->
 				<li><a href="#">Undergraduate</a></li>
+				<li><a href="#">Graduate</a></li>
 				<li><a href="#">Faculty</a></li>
 				<li><a href="#">Curriculum</a></li>
 				<li><a href="#">Facilities</a></li>
 				<li><a href="#">News + Research</a></li>
-				<li><a href="#">Application Process</a></li>
-				<li><a href="#">Request Information</a></li>
 				<li><a href="#">Contact</a> </li>
 			</ul>
 			
@@ -91,16 +91,16 @@
 		</nav>
 		
 		<section class="mainContainer clearfix">
-			<div class="box heroImage">
-				<img src="#" alt=""/>
+			<div class="box heroImage clearfix">
+				<img src="../img/textiles/text-hero-01.jpg" alt=""/>
 			</div>
 			
 			<div class="box statement">
-				<p>At RISD Textiles is about a lot more than traditional weaving. It’s about working with breakthrough materials and technologies, mastering the art of fiber and gaining a solid understanding of global artistic, social and cultural concerns.
+				<p>A field in constant flux, textiles at RISD isn't just about sitting quietly at a loom; it's about working with breakthrough technologies to master the art of fabric, fiber and pattern while you develop as an artist and designer who will energize the field through your own personal vision.</p>
 			</div>
 			
 			<div class="box degrees clearfix">
-				<h3>Degrees</h3>
+				<h2>Degree Programs</h2>
 				
 				<ul>
 					<li><a href="#">BFA</a></li>
@@ -114,34 +114,35 @@
 			</div>
 			
 			<div class="box gallery">
-				<h3>In the Studio</h3>
+				<h2>In the Studio</h2>
 				<div class="galleryContainer flexslider">
 						<ul class="slides">
-							<li><img src="#" alt=""></li>
-							<li><img src="#" alt=""></li>
-							<li><img src="#" alt=""></li>
-							<li><img src="#" alt=""></li>
-							<li><img src="#" alt=""></li>
-							<li><img src="#" alt=""></li>
+							<li><img src="../img/textiles/text-studio-01.jpg" alt=""></li>
+							<li><img src="../img/textiles/text-studio-07.jpg" alt=""></li>
+							<li><img src="../img/textiles/text-studio-03.jpg" alt=""></li>
+							<li><img src="../img/textiles/text-studio-04.jpg" alt=""></li>
+							<li><img src="../img/textiles/text-studio-05.jpg" alt=""></li>
+							<li><img src="../img/textiles/text-studio-06.jpg" alt=""></li>
 						</ul>
 				</div>
 			</div>          
 			
 			<div class="box studentProfile right clearfix">
-				<h3>Student Profile</h3>
-				<img src="#"/>
+				<h2>BFA candidate: Margaret Kearney</h2>
+				<img src="../img/textiles/margaret-kearney.jpg"/>
 				<p>
-					“I really had no idea what it would mean to relate my environmental activism with my work in textiles, so it’s been exciting to develop a process for myself.”
-					junior Margaret Kearney upon receipt of the Udall Scholarship » more
+					"I really had no idea what it would mean to relate my environmental activism with my work in textiles, so it's been exciting to develop a process for myself." 
+
+Margaret Kearney’s ability to weave formal and aesthetic concerns with her environmental activism won her national recognition as a Udall Scholar, a program that recognizes college students on the basis of their commitment to careers in the environment, health care or tribal public policy. In winning the scholarship – which is typically awarded to students majoring in science or environmental policy – Kearney became the first student from an art and design school to be recognized by the Udall Foundation since the awards were first given in 1996. 
 				</p>
 			</div>
 			
 			<div class="box gallery ">
-				<h3>Student Work</h3>
+				<h2>Student Work</h2>
 				<div class="galleryContainer flexslider">
 					<ul class="slides">
-						<li><img src="#" alt=""></li>
-						<li><img src="#" alt=""></li>
+						<li><img src="../img/textiles/text-studentWork-01.jpg" alt=""></li>
+						<li><img src="../img/textiles/text-student-work-02.jpg" alt=""></li>
 						<li><img src="#" alt=""></li>
 						<li><img src="#" alt=""></li>
 						<li><img src="#" alt=""></li>
@@ -151,69 +152,88 @@
 			</div>
 			
 			<div class="box facultyProfile left clearfix">
-				<h3>Head of the Architecture Department</h3>
-				<img src="#"/>
+				<h2>Brooks Hagan: Department Head</h2>
+				<img src="../img/textiles/brooks-hagan.jpg"/>
 				<p>
-					Textile designer, artist and researcher Brooks Hagan maintains his own studio practice and works with industry leaders to investigate advanced computational environments for the design of constructed textiles.
+					Textile designer, artist and researcher Brooks Hagen inspires RISD students to continuously expand their knowledge and explore the use of advanced technologies in their work. Hagen maintains a studio practice centered on hand-production and digital design, and regularly collaborates with industry leaders. He recently completed a project with computer scientists at Cornell University, which investigates advanced computational environments for the design of constructed textiles. 
 				</p>
 			</div>
 			
-			<div class="box facultyNews">
-				<h3>Faculty in the Field</h3>
+			<!-- <div class="box facultyNews">
+				<h2>Faculty in the Field</h2>
 				<ul>
-					<li>Faculty Story 1</li>
-					<li>Faculty Story 2</li>
-					<li>Faculty Story 3</li>
-					<li>Faculty Story 4</li>
+					<ul class="facultyStory">
+						<li class="facultyHeadline">Lee’s Student Works Featured</li>
+						<li class="story">Bojagi is a traditional Korean textile technique often used to make wrapping cloths for religious ceremonies, weddings and common daily usages. An exhibit of work from Chungie Lee’s (Critic, Textiles) “Bojagi and Beyond” RISD Wintersession course is open at three locations through 2013.</li>
+					</ul>
+						
+					
 				</ul>
-			</div>
-			
-			<div class="box atmospheric">
-				<img src="#" alt=""/>
 				
 			</div>
-			
-			<div class="box alumniFeature">
-				<h3>Notable Alumni</h3>
-				<ul>
-					
-					<ul class="alumn">
-						<li class="name">Rachel Doriss </li> 
-						<li class="description">design director of a major NYC textiles firm</li>
-					</ul>
-					
-					<ul class="alumn">
-						<li class="name">Liz Collins </li> 
-						<li class="description">performance artist, knitwear designer + fashion provocateur</li>
-					</ul>
-					
-					<ul class="alumn">
-						<li class="name">Michael Koch </li> 
-						<li class="description">industry leader working with global producers</li>
-					</ul>
-					
-					<ul class="alumn">
-						<li class="name">Karelle Levy</li> 
-						<li class="description">artist, designer + founder of KRELwear</li>
-					</ul>
-				</ul>
+			 -->
+			<div class="box atmospheric clearfix">
+				<img src="../img/textiles/text-atmos-big.jpg" alt=""/>
 			</div>
+			
+		
 			
 			<div class="box statement quote">
-				<p>“I really had no idea what it would mean to relate my environmental activism with my work in textiles, so it’s been exciting to develop a process for myself.”</p>
-				<p>Margaret Kearneye / BFA '13 Textiles</p>
+				<p>“When I was looking at textile and apparel programs all over the country, someone said to me, ‘Well, if you want to be a cog in the wheel, then go to X school. But if you want to be the driver of the car, then you should go to RISD. And, I mean, who doesn’t want to be the driver of their own car, right? So, eventually I would like to do that — to drive my own design firm.” </p>
+				<p>Chriss Slevin BFA ‘97 PT / MFA ‘07 TX</p>
 			</div>
 			
-			<div class="box atmospheric">
-				<img src="#" alt=""/>
+
+			
+		
+<!-- 
+			<div class="box alumniFeature clearfix">
+				<h2>After RISD Textiles</h2>
+				
+				<!-- <p class="moduleIntro">
+					A statement about RISD Architecture and the things you can do afterwards.
+				</p>	
+				 -->
+				
+				<!-- <ul class="alumnStories">
+					
+					<ul class="alumn">
+						<li class="name">Rachel Doriss ‘99 TX | VP + Design Director, POLLACK Fabrics</li> 
+						<li class="description">When Rachel Doriss first came to RISD, she was already head over heels in love with textiles, imagining that might lead to owning a small weaving studio in rural Vermont. But while studying both printed and woven techniques — and with frequent class trips to Manhattan — she suddenly wanted to explore practical applications within the textiles industry instead. Moving to New York right after graduation, she found a job designing printed silk scarves at Echo and the following year, joined the textiles firm POLLACK. By 2012 she had become a vice president and, when founder and fellow RISD graduate Mark Pollack retired, he chose Rachel to replace him as design director of the company.</li>
+					</ul> -->
+					
+					
+					
+					<!-- <ul class="alumn">
+						<li class="name">Victoria Rospond + Lea Cloud</li> 
+						<li class="description">thriving architectural partnership</li>
+					</ul>
+					
+					<ul class="alumn">
+						<li class="name">Ken Lewis</li> 
+						<li class="description">building skyscrapers @SOM</li>
+					</ul> -->
+				<!-- </ul> -->
+				
+				<!-- <div class="ingredients">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div> -->
+			<!-- </div> -->
+
+				<div class="box atmospheric clearfix">
+				<img src="../img/textiles/text-atmos-02.jpg" alt=""/>
 				
 			</div>
 			
-			
-			<div class="box statement requestInfo">
+			<div class="box  requestInfo">
+				<h2>Get in Touch</h2>
 				<p>
 					Amazing things happen to students who come here. To learn more about how you can bring your ideas to life at RISD, please submit this form and we will send you additional information.
 				</p>
+				
+
 				<form>
 					
 					<input type="text" id="firstname" value="first name"></input>
@@ -240,36 +260,47 @@
 						<option>transfer</option>
 						<option>graduate student</option>
 					</select>
+
+					<input id="submit" type="submit" value="submit"></input>
+
 				</form>
 			</div>
 			
 			<div class="box departmentList clearfix">
 				<p>
-					<a href="#">Apparel Design</a> 
-					<a href="#">Architecture</a> 
-					<a href="#">Ceramics</a> 
-					<a href="#">Digital + Media</a> 
-					<a href="#">Film/Animation/Video</a> 
-					<a href="#">Furniture Design</a> 
-					<a href="#">Glass</a> 
-					<a href="#">Graphic Design</a> 
-					<a href="#">Illustration</a> 
-					<a href="#">Industrial Design</a> 
-					<a href="#">Interior Architecture</a> 
-					<a href="#">Jewelry + Metalsmithing</a> 
-					<a href="#">Landscape Architecture</a> 
-					<a href="#">Painting</a> 
-					<a href="#">Photography</a> 
-					<a href="#">Printmaking</a> 
-					<a href="#">Sculpture</a> 
-					<a href="#">Teaching + Learning in Art + Design</a> 
-					<a href="#">Textiles</a> 
+					<a id="apparel-link" href="#">Apparel Design</a> 
+					<a id="architecture-link" href="../architecture/index.html">Architecture</a> 
+					<a id="ceramics-link" href="#">Ceramics</a> 
+					<a id="digital-media-link" href="#">Digital + Media</a> 
+					<a id="fav-link" href="../film-animation-video/index.html">Film/Animation/Video</a> 
+					<a id="furniture-link" href="#">Furniture Design</a> 
+					<a id="glass-link" href="#">Glass</a> 
+					<a id="graphic-design-link" href="#">Graphic Design</a> 
+					<a id="illustration-link" href="#">Illustration</a> 
+					<a id="industrial-design-link" href="#">Industrial Design</a> 
+					<a id="interior-architecture-link" href="#">Interior Architecture</a> 
+					<a id="jewelry-link" href="#">Jewelry + Metalsmithing</a> 
+					<a id="landscape-arch-link" href="#">Landscape Architecture</a> 
+					<a id="painting-link" href="#">Painting</a> 
+					<a id="photography-link" href="#">Photography</a> 
+					<a id="printmaking-link" href="#">Printmaking</a> 
+					<a id="sculpture-link" href="#">Sculpture</a> 
+					<a id="tlad-link" href="#">Teaching + Learning in Art + Design</a> 
+					<a id="textiles-link" href="../textiles/index.html">Textiles</a> 
 				</p>
+				<!-- <div class="ingredients">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div> -->
 			</div>
 			
 		</section>
 		
-		
+		  <script>
+    	$.backstretch("../img/textiles/text-bg-02.jpg");
+   		
+    </script>
 	</div>
 </body>
 </html>
