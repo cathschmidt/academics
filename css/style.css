@@ -628,13 +628,13 @@ header{
 .gallery img{
 	/*width:816px;
 	height:500px;*/
-	float:left;
+	/*float:left;*/
 	
 }
 
 .galleryContainer{
 	width:816px;
-	height:500px;
+	/*height:500px;*/
 	background:rgb(220,220,220);
 }
 
